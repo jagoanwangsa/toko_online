@@ -95,8 +95,6 @@ html,body{
  */
 
 
-
-
 /*
  * Footer
  */
@@ -110,6 +108,46 @@ html,body{
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+
+.row-for-cards {
+display: flex;
+flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(250, 250, 250, 1); /* off-white */
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    height: auto;
+    margin-top: 3rem;
+  
+}
+
+
+.card span {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.card-footer {
+    position: relative;
+    bottom: 0px;
+    margin: 5px;
+}
+
+.card-header{
+    height: 40px;
+    padding-top: 20px;
 }
 </style>
 </head>
@@ -139,27 +177,217 @@ html,body{
     </div>
 
     <div id="content">
-        <div class="container">
-		                
-                <div class="row">
-                    <div class="col-xs-12 col-md-12"><p>Row1</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-12"><p>Row2</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-12"><p>Row3</p></div>
-                </div>			
-                <div class="row">
-                    <div class="col-xs-12 col-md-12"><p>Row4</p></div>
-                </div>			
-                <div class="row">
-                    <div class="col-xs-12 col-md-12"><p>Row5</p></div>
-                </div>			
-                <div class="row">
-                    <div class="col-xs-12 col-md-12"><p>Row6</p></div>
-                </div>			                
+
+      <div class="container">
+        <div class="row row-for-cards">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <!-- <div class="row"> -->
+                        <div class="col-12 text-center card-header">
+                            <span>Package 1 </span>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <ul>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="col-12 card-footer">
+                            <button class="btn btn-danger btn-block ">Add To Cart</button>
+                        </div>
+                    </div>
+                <!-- </div> -->
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card">
+                        <!-- <div class="row"> -->
+                            <div class="col-12 text-center card-header">
+                                <span>Package 2 </span>
+                            </div>
+                            <hr>
+                            <div class="col-12">
+                                <ul>
+                                    <li>Description: This is a product.</li>
+                                    <li>Price: $1,200</li>
+                                    <li>Description: This is a product.</li>
+                                    <li>Price: $1,200</li>
+                                    <li>Description: This is a product.</li>
+                                    <li>Price: $1,200</li>
+                                   
+                                </ul>
+                                
+                            </div>
+                            
+                            <div class="col-12 card-footer">
+                                <button class="btn btn-danger btn-block">Add To Cart</button>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card">
+                            <!-- <div class="row"> -->
+                                <div class="col-12 text-center card-header">
+                                    <span>Package 3 </span>
+                                </div>
+                                <hr>
+                                <div class="col-12">
+                                    <ul>
+                                        <li>Description: This is a product.</li>
+                                        <li>Price: $1,200</li>
+                                        <li>Description: This is a product.</li>
+                                        <li>Price: $1,200</li>
+                                        <li>Description: This is a product.</li>
+                                        <li>Price: $1,200</li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                                
+                                <div class="col-12 card-footer">
+                                    <button class="btn btn-danger btn-block ">Add To Cart</button>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <!-- <div class="row"> -->
+                        <div class="col-12 text-center card-header">
+                            <span>Package 4</span>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <ul>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="col-12 card-footer">
+                            <button class="btn btn-danger btn-block ">Add To Cart</button>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+       
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <!-- <div class="row"> -->
+                        <div class="col-12 text-center card-header">
+                            <span>Package 5</span>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <ul>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="col-12 card-footer">
+                            <button class="btn btn-danger btn-block ">Add To Cart</button>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <!-- <div class="row"> -->
+                        <div class="col-12 text-center card-header">
+                            <span>Package 6</span>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <ul>
+                                <li>Description: This is a product.</li>
+                                <li>Price: $1,200</li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="col-12 card-footer">
+                            <button class="btn btn-danger btn-block ">Add To Cart</button>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card">
+                        <!-- <div class="row"> -->
+                            <div class="col-12 text-center card-header">
+                                <span>Package 7</span>
+                            </div>
+                            <hr>
+                            <div class="col-12">
+                                <ul>
+                                    <li>Description: This is a product.</li>
+                                    <li>Price: $1,200</li>
+                                    <li>Description: This is a product.</li>
+                                    <li>Price: $1,200</li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+                            <div class="col-12 card-footer">
+                                <button class="btn btn-danger btn-block ">Add To Cart</button>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card">
+                        <!-- <div class="row"> -->
+                            <div class="col-12 text-center card-header">
+                                <span>Package 8</span>
+                            </div>
+                            <hr>
+                            <div class="col-12">
+                                <ul>
+                                    <li>Description: This is a product.</li>
+                                    <li>Price: $1,200</li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+                            <div class="col-12 card-footer">
+                                <button class="btn btn-danger btn-block ">Add To Cart</button>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>              
+        </div>
+    </div>
+    
+
+
 		</div>
 
     <div class="navbar navbar-blend navbar-fixed-bottom">
