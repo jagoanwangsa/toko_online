@@ -1,12 +1,10 @@
+const express = require('express'); 
+const home = require('./app/routers/barang.routes'); 
+  
+const app = express(); 
+  
+app.use(home); 
 
 
-var http = require('http');
-
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('Hello World!'); //write a response to the client
-  res.end(); //end the response
-}).listen(8080); //the server object listens on port 8080
-
-              
+app.listen(process.env.PORT || 8080);
 
